@@ -1,0 +1,159 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1.5fr 15fr 1fr;
+}
+
+.header {
+    background-color: #48acaf;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1 {
+    font-size: 30px;
+}
+
+.main {
+    -webkit-box-shadow: inset 0 4px 4px rgba(156, 156, 156, 0.91);
+    -moz-box-shadow: inset 0 4px 4px rgba(156, 156, 156, 0.91);
+    box-shadow: inset 0 4px 4px rgba(156, 156, 156, 0.91);
+    flex-direction: column;
+    position: relative;
+    margin: 0;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main .book-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    padding: 2em;
+}
+
+.main .book-area li {
+    display: flex;
+    flex-direction: row;
+    /*align-items: center;*/
+    justify-content: space-between;
+    border-radius: 15px;
+    border-color: #b2b8bd;
+    border-width: thin;
+    border-style: solid;
+    background-color: #B8C1C8;
+    gap: 1em;
+
+    /*Makes inner buttons have rounded corners*/
+    overflow: hidden;
+
+    box-shadow: 5px 5px 5px rgba(156, 156, 156, 0.91);
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.75em;
+    width: 50%;
+}
+
+.card-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.card-buttons button {
+    padding: 1.5em;
+    border-top:    none;
+    border-right:  none;
+    border-bottom: none;
+    border-left:   1px solid  black;
+}
+
+.card-buttons > button:first-of-type {
+    border-bottom: 1px solid black !important;
+    background-color: #abde77;
+}
+
+.card-buttons > button:last-of-type {
+    background-color: #de9377;
+}
+
+.footer {
+    background-color: #385857;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.button-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+.button-area button {
+    padding: 20px 30px 20px 30px;
+    background-color: #eeeeee;
+    font-size: 30px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px rgba(156, 156, 156, 0.91);
+}
+
+
+.create-screen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .4);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.create-screen form {
+    background-color: rgb(255, 255, 255, 1);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+}
+
+.cancel-button-row {
+    display: flex;
+    justify-content: flex-end;
+}
