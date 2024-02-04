@@ -6,7 +6,12 @@ books as needed.
 
 Try it for yourself at: https://markortleb.github.io/library-web-app/
 
+## How to host
+You can host this app by running the following:
+``` bash
+make host
+```
 
-### Disclaimer
+## Disclaimer
 
 This app needs to be modified to let users save data.
